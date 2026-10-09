@@ -1,0 +1,6 @@
+{
+  "name": "ImmoFind",
+  "description": "Trouvez facilement votre future maison ou parcelle.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
