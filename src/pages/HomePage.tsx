@@ -16,7 +16,7 @@ export default function HomePage() {
       <main className="max-w-7xl mx-auto px-6 py-8">
         <section className="relative w-full h-[400px] mb-12 rounded-3xl overflow-hidden shadow-lg">
           <img 
-            src="/src/assets/images/hero_real_estate_1791544686016.jpg" 
+            src="/assets/images/hero_real_estate_1791544686016.jpg" 
             alt="Hero" 
             className="w-full h-full object-cover"
           />
