@@ -1,4 +1,5 @@
 import { Property } from '../data/properties';
+import { Link } from 'react-router-dom';
 
 interface PropertyCardProps {
   property: Property;
@@ -6,7 +7,7 @@ interface PropertyCardProps {
 
 export default function PropertyCard({ property }: PropertyCardProps) {
   return (
-    <div className="border border-slate-200 rounded-lg overflow-hidden flex flex-col shadow-sm hover:shadow-md transition-shadow">
+    <Link to={`/property/${property.id}`} className="border border-slate-200 rounded-lg overflow-hidden flex flex-col shadow-sm hover:shadow-md transition-shadow">
       <img src={property.image} alt={property.title} className="w-full h-48 object-cover" />
       <div className="p-4 flex flex-col gap-2">
         <h3 className="text-lg font-semibold text-slate-900">{property.title}</h3>
@@ -17,6 +18,6 @@ export default function PropertyCard({ property }: PropertyCardProps) {
           <span>{property.bathrooms} sdb.</span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
